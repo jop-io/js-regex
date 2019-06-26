@@ -1,11 +1,11 @@
-# js-regex
-Javascript regex
+# Regex
+Diverse regexpar...
 
 ## 📅 Datum
 Matchar datum i den svenska kalendern i formatet `YYYY-MM-DD`, från år 0000-01-01 till år 9999-12-31.
 
 Möstret matchar borttagandet av dagarna 18-28 februari år 1753 samt tar höjd för skottdagar:
-* både i Julianska och Greorianska kalendern
+* både i den Julianska och den Greorianska kalendern
 * det första försöket till kalenderbyte (stöket med skottdagar) år 1700-1708
 * tillökningsdagen (för att komma till rätta med stöket) år 1712
 
@@ -14,7 +14,7 @@ Möstret matchar borttagandet av dagarna 18-28 februari år 1753 samt tar höjd 
 ```
 
 ## 📱 Mobiltelefonnummer
-Matcher oformaterade svenska mobiltelefonnummer i möstrena `+467*xxxxxxx`, `00467*xxxxxxx` och `07*xxxxxxx`.
+Matchar oformaterade svenska mobiltelefonnummer i möstrena `+467*xxxxxxx`, `00467*xxxxxxx` och `07*xxxxxxx`.
 
 ```javascript
 ((\+|00)46|0)7[02369][0-9]{7}

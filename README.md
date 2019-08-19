@@ -22,8 +22,9 @@ Matchar oformaterade svenska mobiltelefonnummer i möstrena `+467*xxxxxxx`, `004
 
 ## Registreringsnummer
 Matchar oformaterade icke-personliga registreringsnummer för svenska fordon, i mönstret `ABC123` och `ABC12A`.
+Tecken som inte tillåts i icke-personliga registreringnummer är `I`, `V`, `Q`, `Å`, `Ä` och `Ö`.
 ```regex
-^[ABCDEFGHJKLMNOPRSTUWXYZ]{3}[0-9]{2}[ABCDEFGHJKLMNOPRSTUWXYZ0123456789]{1}$
+^[A-HJ-PR-UW-Z]{3}[0-9]{2}[A-HJ-PR-UW-Z0-9]{1}$
 ```
 
 ## MAC-adresser

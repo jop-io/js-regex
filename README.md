@@ -20,6 +20,12 @@ Matchar oformaterade svenska mobiltelefonnummer i möstrena `+467*xxxxxxx`, `004
 ^((\+|00)46|0)7[02369][0-9]{7}$
 ```
 
+## Registreringsnummer
+Matchar oformaterade icke-personliga registreringsnummer för svenska fordon, i mönstret `ABC123` och `ABC12A`.
+```regex
+^[ABCDEFGHJKLMNOPRSTUWXYZ]{3}[0-9]{2}[ABCDEFGHJKLMNOPRSTUWXYZ0123456789]{1}$
+```
+
 ## MAC-adresser
 `01:23:45:67:89:ab`
 ```regex

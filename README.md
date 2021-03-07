@@ -18,6 +18,15 @@ Förenklad variant som endast tar höjd för skottår:
 ^((([02468][048]|[13579][26])00|\d\d(0[48]|[2468][048]|[13579][26]))\-02\-29)|(\d{4}\-((0[135789]|1[02])\-(0[1-9]|[12]\d|3[01])|(0[469]|11)\-(0[1-9]|[12]\d|30)|(02\-(0[1-9]|1\d|2[0-8]))))$
 ```
 
+## Personnummer & samordningsnummer
+Validering av 12-siffriga person- och samordningsnummer i formatet `YYYYMMDDXXXX`.
+* Matchar datum för skottdagar
+* Matchar dagar/datum med +60 dagar för samordningsnummer
+* Validerar INTE kontrollsiffra
+```regex
+^(((([02468][048]|[13579][26])00|\d\d(0[48]|[2468][048]|[13579][26]))02[28]9)|(\d{4}((0[135789]|1[02])([06][1-9]|[1278]\d|[39][01])|(0[469]|11)([06][1-9]|[1278]\d|[39]0)|(02([06][1-9]|[17]\d|[28][0-8])))))\d{4}$
+```
+
 ## E-postadress
 Matchar e-postadresser. Rätt.
 ```regex

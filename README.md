@@ -40,11 +40,13 @@ Matchar oformaterade svenska mobiltelefonnummer i möstrena `+467*xxxxxxx`, `004
 ^((\+|00)46|0)7[02369][0-9]{7}$
 ```
 
-## Registreringsnummer
-Matchar oformaterade icke-personliga registreringsnummer för svenska fordon, i mönstret `ABC123` och `ABC12A`.
-Tecken som inte tillåts i icke-personliga registreringnummer är `I`, `V`, `Q`, `Å`, `Ä` och `Ö`.
+## Svenska registreringsnummer
+Matchar oformaterade registreringsnummer för svenska fordon, i mönstret `ABC123` och `ABC12A`.
+- [Nu har de nya registreringsnumrena lanserats](https://www.transportstyrelsen.se/sv/vagtrafik/Fordon/Intressenter/nu-har-de-nya-registreringsnumrena-lanserats) (Transportstyrelsen)
+- [Spärrade bokstavskombinationer](https://www.transportstyrelsen.se/sv/vagtrafik/fordon/aga-kopa-eller-salja-fordon/registreringsskyltar/byte-av-registreringsnummer/Sparrade-bokstavskombinationer) (Transportstyrelsen)
+
 ```regex
-^[A-HJ-PR-UW-Z]{3}[0-9]{2}[A-HJ-PR-UW-Z0-9]{1}$
+^(?!APA|ARG|ASS|BAJ|BSS|CUC|CUK|CUM|DUM|ETA|ETT|FAG|FAN|FEG|FEL|FEM|FES|FET|FNL|FUC|FUK|FUL|GAM|GAY|GEJ|GEY|GHB|GUD|GYN|HAT|HBT|HKH|HOR|HOT|KGB|KKK|KUC|KUF|KUG|KUK|KYK|LAM|LAT|LEM|LOJ|LSD|LUS|MAD|MAO|MEN|MES|MLB|MUS|NAZ|NRP|NSF|NYP|OND|OOO|ORM|PAJ|PKK|PLO|PMS|PUB|RAP|RAS|ROM|RPS|RUS|SEG|SEX|SJU|SOS|SPY|SUG|SUP|SUR|TBC|TOA|TOK|TRE|TYP|UFO|USA|WAM|WAR|WWW|XTC|XTZ|XXL|XXX|ZEX|ZOG|ZPY|ZUG|ZUP|ZOO)[ABCDEFGHJKLMNOPRSTUWXYZ]{3}(\d{3}|\d\d[ABCDEFGHJKLMNPRSTUWXYZ])$
 ```
 
 ## MAC-adresser
